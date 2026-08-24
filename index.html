@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Archive — A Visual Timeline</title>
+<meta name="description" content="A chronological visual archive.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <span class="site-eyebrow">Est. — Ongoing</span>
+  <h1 class="site-title">The Archive</h1>
+  <p class="site-subtitle">A running visual record, arranged chronologically. Browse by year, filter by tag, or search below.</p>
+</header>
+
+<div class="controls">
+  <input type="text" class="search-input" id="searchInput" placeholder="Search titles…" aria-label="Search entries">
+  <div class="tag-filters" id="tagFilters"></div>
+</div>
+
+<main class="timeline" id="timeline">
+  <!-- entries injected by js/timeline.js -->
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">Close ✕</button>
+  <div class="lightbox-content" id="lightboxContent"></div>
+</div>
+
+<footer class="site-footer">
+  Built and maintained by hand. Edit entries via <code>editor.html</code>.
+</footer>
+
+<script src="js/timeline.js"></script>
+</body>
+</html>
